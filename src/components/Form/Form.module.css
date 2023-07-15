@@ -1,0 +1,42 @@
+.phonebook {
+  width: 300px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  gap: 2px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.515);
+  /* margin: 10px; */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.input {
+  max-width: 180px;
+  margin-bottom: 3px;
+}
+
+.submitBtn {
+  font-size: 13px;
+  color: black;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  width: 120px;
+  border: 1px solid rgb(94, 42, 42);
+  cursor: pointer;
+  /* background-color: transparent; */
+  transition: box-shadow 300ms;
+}
+
+.submitBtn:hover {
+  color: black;
+  background-color: #f2f2f2;
+  box-shadow: rgba(128, 79, 70, 0.378) 0px 2px 5px 0px;
+  border: 1px solid rgb(48, 21, 21);
+}
