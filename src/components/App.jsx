@@ -48,12 +48,13 @@ class App extends Component {
   // componentDidMount() {
   //   // ta metoda na starcie załaduje do ls podane w state kontakty
   //   localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-  // }    
+  // }
 
-   componentDidMount() {
-    const storedContacts = 
-      localStorage.getItem('contacts');
-      this.setState({contacts: JSON.parse(storedContacts)})
+  componentDidMount() {
+    const storedContacts = localStorage.getItem('contacts');
+    if (storedContacts) {
+      this.setState({ contacts: JSON.parse(storedContacts) });
+    }
   }
 
   componentDidUpdate() {
